@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost&display=swap');
+
+$brown: rgba(205, 162, 116);
+$dark: rgba(41, 47, 54);
+$light: rgba(244, 240, 236);
+
+$font-jost: 'Jost', sans-serif;
+$font-serif: 'DM Serif Display', serif;
+
+$r_minmob: 320px;
+$r_mob336: 336px;
+$r_mob400: 400px;
+$r_mob500: 500px;
+$r_tab: 768px;
+$r_tab_900: 900px;
+$r_desk: 1000px;
+$r_desk_1120: 1120px;
+$r_desk_hd: 1200px;
+$r_desk_1280: 1280px;
+$r_desk_1350: 1350px;
+$r_desk_1450: 1450px;
+$r_desk_ful_1750: 1750px;
+
+html {
+    font-size: 10px;
+    @media (max-width: $r_mob500) {
+        font-size: 8px;
+    }
+}
+
+body {
+    background-image: url(../images/Line.png);
+    width: 100%;
+    height: 1000px;
+    background-position: center;
+    background-repeat-x: no-repeat;
+    font-family: $font-serif;
+    font-size: 2.2rem;
+}
+
+.container {
+    max-width: 120rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3.3rem;
+
+    &__logo {
+        width: 17.7rem;
+        height: 7rem;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+        list-style-type: none;
+        font-family: $font-jost;
+        padding: 0;
+    }
+    &__item {
+        margin-left: 4.8rem;
+        &:first-child {
+            margin: 0;
+        }
+        &:last-child {
+            margin-left: 3rem;
+        }
+    }
+
+    &__link {
+        color: $dark;
+        text-decoration: none;
+    }
+
+    &__btn {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 0;
+    }
+
+}
+
